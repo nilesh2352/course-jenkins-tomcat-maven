@@ -12,6 +12,8 @@ public class HelloController {
     @GetMapping(value = {"", "/", "/now"})
     String hello() {
         return "Now is " + LocalDateTime.now();
+     String hello() {
+        return "Now is when " + LocalDateTime.now();
     }
     
     @GetMapping(value = "/random")
